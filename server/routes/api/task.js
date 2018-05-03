@@ -1,14 +1,14 @@
 const router = require('express').Router()
-const { Project } = require('../../db')
+const { Task } = require('../../db')
 
 module.exports = router
 
-// Mounted on /api/project
+// Mounted on /api/task
 
 router.get('/', async (req, res, next) => {
   try {
-    const projects = await Project.findAll({ include: [{ all: true }] })
-    res.json(projects)
+    const tasks = await Task.findAll({ include: [{ all: true }] })
+    res.json(tasks)
   } catch (error) {
     console.group('Project Route')
     console.log(error)

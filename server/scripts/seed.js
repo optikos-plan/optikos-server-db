@@ -1,4 +1,4 @@
-const { db, Comment, Document, Project, Task, User } = require('../db');
+const { db, Comment, Document, Project, Task, User } = require('../db')
 
 const seed = async () => {
   await db.sync({ force: true })
@@ -9,19 +9,37 @@ const seed = async () => {
     User.create({ email: 'grace@hopper.com', name: 'Amal' })
   ])
   console.log(`seeded ${users.length} users`)
-  console.log('email: ', users[0].email )
-  console.log('email: ', users[1].email )
+  console.log('email: ', users[0].email)
+  console.log('email: ', users[1].email)
   console.log(`seeded successfully`)
 
-  const projects = await Promise.all([
-    Project.create({ title: 'Project 1'})
-  ])
+  const [project] = await Promise.all([Project.create({ title: 'Project 1' })])
 
   const [task1, task2, task3, task4] = await Promise.all([
-    Task.create({ title: 'First task', description: 'Testing associations', userId: users[0].id}),
-    Task.create({ title: 'Second task', description: 'Testing associations', userId: users[1].id}),
-    Task.create({ title: 'Third task', description: 'Testing associations', userId: users[1].id}),
-    Task.create({ title: 'Fourth task', description: 'Testing associations', userId: users[1].id})
+    Task.create({
+      title: 'First task',
+      description: 'Testing associations',
+      userId: users[0].id,
+      projectId: project.id
+    }),
+    Task.create({
+      title: 'Second task',
+      description: 'Testing associations',
+      userId: users[1].id,
+      projectId: project.id
+    }),
+    Task.create({
+      title: 'Third task',
+      description: 'Testing associations',
+      userId: users[1].id,
+      projectId: project.id
+    }),
+    Task.create({
+      title: 'Fourth task',
+      description: 'Testing associations',
+      userId: users[1].id,
+      projectId: project.id
+    })
   ])
 
   await task2.addParents(task1) // testing dependencies
@@ -33,7 +51,7 @@ const seed = async () => {
 
   const parentTest = await task4.getParents()
   console.log('parents of task4')
-  parentTest.forEach(parent => console.log(parent.title) )
+  parentTest.forEach(parent => console.log(parent.title))
 
   console.log(`relationships created`)
   console.log(`seeded successfully`)
