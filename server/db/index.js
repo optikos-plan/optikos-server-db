@@ -8,7 +8,8 @@ const User = require('./user')
 Task.belongsTo(Project)
 Project.hasMany(Task)
 
-Task.belongsToMany(Task, {through: 'task_task', as: 'dependencies'})
+Task.belongsToMany(Task, { as: 'children', foreignKey: 'ParentTaskId', through: 'dependencies' });
+Task.belongsToMany(Task, { as: 'parents', foreignKey: 'TaskId', through: 'dependencies' });
 
 Document.belongsTo(Task)
 Task.hasMany(Document)

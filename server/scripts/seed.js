@@ -17,12 +17,23 @@ const seed = async () => {
     Project.create({ title: 'Project 1'})
   ])
 
-  const [task1, task2] = await Promise.all([
+  const [task1, task2, task3, task4] = await Promise.all([
     Task.create({ title: 'First task', description: 'Testing associations', userId: users[0].id}),
-    Task.create({ title: 'Second task', description: 'Testing associations', userId: users[1].id})
+    Task.create({ title: 'Second task', description: 'Testing associations', userId: users[1].id}),
+    Task.create({ title: 'Third task', description: 'Testing associations', userId: users[1].id}),
+    Task.create({ title: 'Fourth task', description: 'Testing associations', userId: users[1].id})
   ])
-  await task2.addDependencies(task1)
-  console.log('set', task2.prototype)
+
+  await task2.addParents(task1) // testing dependencies
+  await task3.addParents(task1)
+  await task4.addParents(task1)
+  const childrenTest = await task1.getChildren()
+  console.log('children of task 1')
+  childrenTest.forEach(child => console.log(child.title))
+
+  const parentTest = await task4.getParents()
+  console.log('parents of task4')
+  parentTest.forEach(parent => console.log(parent.title) )
 
   console.log(`relationships created`)
   console.log(`seeded successfully`)
