@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('./db')
 
-const Document = db.define('Document', {
+const Document = db.define('document', {
   title: {
     type: Sequelize.STRING,
     allowNull: false,

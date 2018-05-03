@@ -8,6 +8,26 @@ const User = require('./user')
 Task.belongsTo(Project)
 Project.hasMany(Task)
 
+Task.belongsToMany(Task, {through: 'task_task', as: 'dependencies'})
+
+Document.belongsTo(Task)
+Task.hasMany(Document)
+
+User.hasMany(Task)
+Task.belongsTo(User)
+
+Comment.belongsTo(User)
+User.hasMany(Comment)
+
+Task.hasMany(Comment)
+Comment.belongsTo(Task)
+
+
 module.exports = {
-  db
+  db,
+  Comment,
+  Document,
+  Project,
+  Task,
+  User
 }

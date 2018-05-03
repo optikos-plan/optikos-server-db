@@ -12,7 +12,8 @@
     "sequelize": "^4.2.1"
   },
   "scripts": {
-    "start": "nodemon server/app.js"
+    "start": "nodemon server/app.js",
+    "seed": "node ./server/scripts/seed.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

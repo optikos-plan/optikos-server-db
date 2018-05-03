@@ -1,32 +1,36 @@
-const Sequelize = require('sequelize')
-const db = require('./db')
+const Sequelize = require('sequelize');
+const db = require('./db');
 
-const User = db.define('User', {
-  // create a unique index on name and email
+const User = db.define(
+	'user',
+	{
+		// create a unique index on name and email
 
-  indexes: [
-    {
-      unique: true,
-      fields: ['email']
-    }
-  ],
+	  name: {
+			type: Sequelize.TEXT,
+			allowNull: false,
+			validate: {
+				notEmpty: true
+			}
+		},
 
-  title: {
-    type: Sequelize.TEXT,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
-  },
+		email: {
+			type: Sequelize.TEXT,
+			allowNull: false,
+			validate: {
+				notEmpty: true,
+				isEmail: true
+			}
+		}
+	},
+	{
+		indexes: [
+			{
+				unique: true,
+				fields: [ 'email' ]
+			}
+		]
+	}
+);
 
-  email: {
-    type: Sequelize.TEXT,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-      isEmail: true
-    }
-  }
-})
-
-module.exports = User
+module.exports = User;
