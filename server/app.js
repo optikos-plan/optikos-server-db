@@ -13,18 +13,6 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-// Static middleware
-app.use(express.static(path.join(__dirname, '..', 'public')))
-
-// If you want to add routes, they should go here!
-
-// For all GET requests that aren't to an API route,
-// we will send the index.html!
-app.get('/*', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '..', 'index.html'))
-})
-
-// Handle 404s
 app.use((req, res, next) => {
   const err = new Error('Not Found')
   err.status = 404
