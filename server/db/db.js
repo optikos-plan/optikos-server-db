@@ -1,4 +1,9 @@
 const Sequelize = require('sequelize')
-const db = new Sequelize('postgres://localhost/optikos')
+const db = new Sequelize(
+  process.env.DATABASE_URL || 'postgres://localhost/optikos',
+  {
+    logging: false
+  }
+)
 
 module.exports = db
