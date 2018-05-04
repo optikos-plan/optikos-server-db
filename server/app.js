@@ -5,7 +5,8 @@ const bodyParser = require('body-parser')
 const { db } = require('./db')
 const app = express()
 const routes = require('./routes')
-const PORT = 3000
+
+const PORT = process.env.PORT || 3000
 
 // Logging middleware
 app.use(morgan('dev'))
