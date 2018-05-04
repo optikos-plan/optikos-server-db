@@ -1,9 +1,16 @@
 const router = require('express').Router()
 module.exports = router
 
-router.use('/', (req, res, next) => {
+router.get('/', (req, res, next) => {
   res.send(`
-    <h1>You can’t use up creativity.<br />The more you use, the more you have.<br />-- Maya Angelou</h1>
+    <span>You can’t use up creativity.<br />The more you use, the more you have.<br />-- Maya Angelou</span>
+
+    <h1>test routes</h1>
+    <ul>
+      <li><a href="/api/projects">all projects</a></li>
+      <li><a href="/api/tasks">all tasks</a></li>
+    </ul>
+
   `)
 })
 
