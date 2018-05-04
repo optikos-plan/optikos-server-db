@@ -3,7 +3,15 @@ const path = require('path')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const { db } = require('./db')
+const cors = require('express-cors')
 const app = express()
+
+app.use(
+  cors({
+    allowedOrigins: ['*']
+  })
+)
+
 const routes = require('./routes')
 
 const PORT = process.env.PORT || 3000
