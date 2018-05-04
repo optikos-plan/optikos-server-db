@@ -2,6 +2,9 @@
   "name": "simple-starter-with-server",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">= 7.0.0"
+  },
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -12,6 +15,7 @@
     "sequelize": "^4.2.1"
   },
   "scripts": {
+    "deploy": "sh ./server/scripts/deploy.sh",
     "start": "nodemon server/app.js",
     "seed": "node ./server/scripts/seed.js"
   },
