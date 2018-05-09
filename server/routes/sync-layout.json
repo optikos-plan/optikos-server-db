@@ -1,0 +1,552 @@
+{
+  "id": "542a04c2-2137-4818-a770-e0325dba14c4",
+  "offsetX": 51,
+  "offsetY": 60,
+  "zoom": 100,
+  "gridSize": 0,
+  "links": [
+    {
+      "id": "03c7b0f0-4b4e-4e25-b366-b75bf8b44698",
+      "type": "default",
+      "selected": false,
+      "source": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+      "sourcePort": "c08b8b45-090f-4bdf-a655-213f80ce6765",
+      "target": "0e96f381-f312-47da-8bfb-8ee76c858282",
+      "targetPort": "83f541a2-22fc-4948-bfdb-4c365b7cd58b",
+      "points": [
+        {
+          "id": "6f67fedb-af4a-4a7a-97ae-4eff1153b6fd",
+          "selected": false,
+          "x": 368.5,
+          "y": 250.5
+        },
+        {
+          "id": "a74ec495-d7e7-400b-9f5c-df690567d9e7",
+          "selected": false,
+          "x": 156.5,
+          "y": 480.5
+        }
+      ],
+      "extras": {},
+      "labels": [],
+      "width": 3,
+      "color": "rgba(255,255,255,0.5)",
+      "curvyness": 50
+    },
+    {
+      "id": "70d95e79-fbf5-4aee-8ff4-1b287aee68a7",
+      "type": "default",
+      "selected": false,
+      "source": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+      "sourcePort": "c08b8b45-090f-4bdf-a655-213f80ce6765",
+      "target": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+      "targetPort": "0cfdbdbb-098f-47c5-a333-fceba3cfaf61",
+      "points": [
+        {
+          "id": "33e7e5c9-1a5e-48b4-b362-d3857f43cb2e",
+          "selected": false,
+          "x": 368.5,
+          "y": 250.5
+        },
+        {
+          "id": "cf99543c-9c5d-425f-8893-3d9a50c68ea0",
+          "selected": false,
+          "x": 415.5,
+          "y": 539.5
+        }
+      ],
+      "extras": {},
+      "labels": [],
+      "width": 3,
+      "color": "rgba(255,255,255,0.5)",
+      "curvyness": 50
+    },
+    {
+      "id": "a1306a60-d638-4b9d-a27f-b8737d1c6227",
+      "type": "default",
+      "selected": false,
+      "source": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+      "sourcePort": "c08b8b45-090f-4bdf-a655-213f80ce6765",
+      "target": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+      "targetPort": "85fc1250-5b07-494c-b0fc-d1ba8e211f32",
+      "points": [
+        {
+          "id": "08382611-e65f-4a95-8ec3-d4376ac4c21e",
+          "selected": false,
+          "x": 368.5,
+          "y": 250.5
+        },
+        {
+          "id": "10451f70-3344-4db4-9cdc-7ec0694f2ecc",
+          "selected": false,
+          "x": 655.5,
+          "y": 489.5
+        }
+      ],
+      "extras": {},
+      "labels": [],
+      "width": 3,
+      "color": "rgba(255,255,255,0.5)",
+      "curvyness": 50
+    },
+    {
+      "id": "985ca9b8-0ac1-448b-83be-421d78729223",
+      "type": "default",
+      "selected": false,
+      "source": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+      "sourcePort": "ab73917f-6304-4ab7-90c4-2e64c0f5d53f",
+      "target": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+      "targetPort": "251e01d8-cfa2-4388-a504-2f136c6546e2",
+      "points": [
+        {
+          "id": "a6cb55c5-b551-4c09-97b0-bf523bfc8ac0",
+          "selected": false,
+          "x": 375.5,
+          "y": 99.5
+        },
+        {
+          "id": "159d7652-0d5a-4c02-b81f-0ed908236243",
+          "selected": false,
+          "x": 368.5,
+          "y": 175.5
+        }
+      ],
+      "extras": {},
+      "labels": [],
+      "width": 3,
+      "color": "rgba(255,255,255,0.5)",
+      "curvyness": 50
+    }
+  ],
+  "nodes": [
+    {
+      "id": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+      "type": "task",
+      "selected": false,
+      "x": 294,
+      "y": 176,
+      "extras": {},
+      "ports": [
+        {
+          "id": "251e01d8-cfa2-4388-a504-2f136c6546e2",
+          "type": "task",
+          "selected": false,
+          "name": "top",
+          "parentNode": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+          "links": [
+            "985ca9b8-0ac1-448b-83be-421d78729223"
+          ]
+        },
+        {
+          "id": "f8b70d54-44ae-4757-a512-41294b5c871c",
+          "type": "task",
+          "selected": false,
+          "name": "left",
+          "parentNode": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+          "links": []
+        },
+        {
+          "id": "c08b8b45-090f-4bdf-a655-213f80ce6765",
+          "type": "task",
+          "selected": false,
+          "name": "bottom",
+          "parentNode": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+          "links": [
+            "03c7b0f0-4b4e-4e25-b366-b75bf8b44698",
+            "70d95e79-fbf5-4aee-8ff4-1b287aee68a7",
+            "a1306a60-d638-4b9d-a27f-b8737d1c6227"
+          ]
+        },
+        {
+          "id": "f9926c9c-0b16-46f0-99e3-f8454d6defc5",
+          "type": "task",
+          "selected": false,
+          "name": "right",
+          "parentNode": "0e3de7d8-8102-4590-ab35-3eba938400f5",
+          "links": []
+        }
+      ],
+      "task": {
+        "id": 1,
+        "startDate": null,
+        "endDate": null,
+        "status": "pending",
+        "title": "Second task",
+        "description": "Testing associations",
+        "createdAt": "2018-05-08T21:28:54.342Z",
+        "updatedAt": "2018-05-08T21:28:54.342Z",
+        "projectId": 1,
+        "userId": 2,
+        "project": {
+          "id": 1,
+          "title": "Project 1",
+          "createdAt": "2018-05-08T21:28:54.334Z",
+          "updatedAt": "2018-05-08T21:28:54.334Z"
+        },
+        "children": [
+          {
+            "id": 5,
+            "startDate": null,
+            "endDate": null,
+            "status": "pending",
+            "title": "Wu dong xi",
+            "description": "Testing associations",
+            "createdAt": "2018-05-08T21:28:54.343Z",
+            "updatedAt": "2018-05-08T21:28:54.343Z",
+            "projectId": 1,
+            "userId": 2,
+            "dependencies": {
+              "createdAt": "2018-05-08T21:28:54.400Z",
+              "updatedAt": "2018-05-08T21:28:54.400Z",
+              "ParentTaskId": 1,
+              "TaskId": 5
+            }
+          },
+          {
+            "id": 4,
+            "startDate": null,
+            "endDate": null,
+            "status": "pending",
+            "title": "Fourth task",
+            "description": "Testing associations",
+            "createdAt": "2018-05-08T21:28:54.342Z",
+            "updatedAt": "2018-05-08T21:28:54.342Z",
+            "projectId": 1,
+            "userId": 2,
+            "dependencies": {
+              "createdAt": "2018-05-08T21:28:54.394Z",
+              "updatedAt": "2018-05-08T21:28:54.394Z",
+              "ParentTaskId": 1,
+              "TaskId": 4
+            }
+          },
+          {
+            "id": 3,
+            "startDate": null,
+            "endDate": null,
+            "status": "pending",
+            "title": "Third task",
+            "description": "Testing associations",
+            "createdAt": "2018-05-08T21:28:54.342Z",
+            "updatedAt": "2018-05-08T21:28:54.342Z",
+            "projectId": 1,
+            "userId": 2,
+            "dependencies": {
+              "createdAt": "2018-05-08T21:28:54.386Z",
+              "updatedAt": "2018-05-08T21:28:54.386Z",
+              "ParentTaskId": 1,
+              "TaskId": 3
+            }
+          }
+        ],
+        "parents": [
+          {
+            "id": 2,
+            "startDate": null,
+            "endDate": null,
+            "status": "pending",
+            "title": "First task",
+            "description": "Testing associations",
+            "createdAt": "2018-05-08T21:28:54.342Z",
+            "updatedAt": "2018-05-08T21:28:54.342Z",
+            "projectId": 1,
+            "userId": 1,
+            "dependencies": {
+              "createdAt": "2018-05-08T21:28:54.376Z",
+              "updatedAt": "2018-05-08T21:28:54.376Z",
+              "ParentTaskId": 2,
+              "TaskId": 1
+            }
+          }
+        ],
+        "documents": [],
+        "user": {
+          "id": 2,
+          "name": "Amal",
+          "email": "grace@hopper.com",
+          "createdAt": "2018-05-08T21:28:54.299Z",
+          "updatedAt": "2018-05-08T21:28:54.299Z"
+        },
+        "comments": []
+      }
+    },
+    {
+      "id": "0e96f381-f312-47da-8bfb-8ee76c858282",
+      "type": "task",
+      "selected": true,
+      "x": 82,
+      "y": 481,
+      "extras": {},
+      "ports": [
+        {
+          "id": "83f541a2-22fc-4948-bfdb-4c365b7cd58b",
+          "type": "task",
+          "selected": false,
+          "name": "top",
+          "parentNode": "0e96f381-f312-47da-8bfb-8ee76c858282",
+          "links": [
+            "03c7b0f0-4b4e-4e25-b366-b75bf8b44698"
+          ]
+        },
+        {
+          "id": "2db67a79-03f1-4e70-bbd2-96987a9f4e78",
+          "type": "task",
+          "selected": false,
+          "name": "left",
+          "parentNode": "0e96f381-f312-47da-8bfb-8ee76c858282",
+          "links": []
+        },
+        {
+          "id": "6eaa4169-2b6e-45bb-adae-e1e512182a5b",
+          "type": "task",
+          "selected": false,
+          "name": "bottom",
+          "parentNode": "0e96f381-f312-47da-8bfb-8ee76c858282",
+          "links": []
+        },
+        {
+          "id": "ee382859-916c-48d6-a0de-a6d5d83a037a",
+          "type": "task",
+          "selected": false,
+          "name": "right",
+          "parentNode": "0e96f381-f312-47da-8bfb-8ee76c858282",
+          "links": []
+        }
+      ],
+      "task": {
+        "id": 5,
+        "startDate": null,
+        "endDate": null,
+        "status": "pending",
+        "title": "Wu dong xi",
+        "description": "Testing associations",
+        "createdAt": "2018-05-08T21:28:54.343Z",
+        "updatedAt": "2018-05-08T21:28:54.343Z",
+        "projectId": 1,
+        "userId": 2,
+        "dependencies": {
+          "createdAt": "2018-05-08T21:28:54.400Z",
+          "updatedAt": "2018-05-08T21:28:54.400Z",
+          "ParentTaskId": 1,
+          "TaskId": 5
+        }
+      }
+    },
+    {
+      "id": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+      "type": "task",
+      "selected": false,
+      "x": 341,
+      "y": 540,
+      "extras": {},
+      "ports": [
+        {
+          "id": "0cfdbdbb-098f-47c5-a333-fceba3cfaf61",
+          "type": "task",
+          "selected": false,
+          "name": "top",
+          "parentNode": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+          "links": [
+            "70d95e79-fbf5-4aee-8ff4-1b287aee68a7"
+          ]
+        },
+        {
+          "id": "d5b37941-1578-465b-a462-163507bbf2ff",
+          "type": "task",
+          "selected": false,
+          "name": "left",
+          "parentNode": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+          "links": []
+        },
+        {
+          "id": "00cd1434-5a78-4942-a527-6cdaa2133504",
+          "type": "task",
+          "selected": false,
+          "name": "bottom",
+          "parentNode": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+          "links": []
+        },
+        {
+          "id": "ca9bb74a-11fe-4b5c-b0f6-033643efbf3e",
+          "type": "task",
+          "selected": false,
+          "name": "right",
+          "parentNode": "f9d42b51-f13a-4d4e-8de2-4c461b582dd0",
+          "links": []
+        }
+      ],
+      "task": {
+        "id": 4,
+        "startDate": null,
+        "endDate": null,
+        "status": "pending",
+        "title": "Fourth task",
+        "description": "Testing associations",
+        "createdAt": "2018-05-08T21:28:54.342Z",
+        "updatedAt": "2018-05-08T21:28:54.342Z",
+        "projectId": 1,
+        "userId": 2,
+        "dependencies": {
+          "createdAt": "2018-05-08T21:28:54.394Z",
+          "updatedAt": "2018-05-08T21:28:54.394Z",
+          "ParentTaskId": 1,
+          "TaskId": 4
+        }
+      }
+    },
+    {
+      "id": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+      "type": "task",
+      "selected": false,
+      "x": 581,
+      "y": 490,
+      "extras": {},
+      "ports": [
+        {
+          "id": "85fc1250-5b07-494c-b0fc-d1ba8e211f32",
+          "type": "task",
+          "selected": false,
+          "name": "top",
+          "parentNode": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+          "links": [
+            "a1306a60-d638-4b9d-a27f-b8737d1c6227"
+          ]
+        },
+        {
+          "id": "2846058c-e2ad-4a19-81ea-7924ecd091b7",
+          "type": "task",
+          "selected": false,
+          "name": "left",
+          "parentNode": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+          "links": []
+        },
+        {
+          "id": "d17c9ebf-f78d-4a28-9363-36cdde2ce8d3",
+          "type": "task",
+          "selected": false,
+          "name": "bottom",
+          "parentNode": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+          "links": []
+        },
+        {
+          "id": "2d4cbdd2-5590-46cb-be31-efbd9f666db0",
+          "type": "task",
+          "selected": false,
+          "name": "right",
+          "parentNode": "4e48c4db-dda0-4fba-8be6-1df0019bc1e5",
+          "links": []
+        }
+      ],
+      "task": {
+        "id": 3,
+        "startDate": null,
+        "endDate": null,
+        "status": "pending",
+        "title": "Third task",
+        "description": "Testing associations",
+        "createdAt": "2018-05-08T21:28:54.342Z",
+        "updatedAt": "2018-05-08T21:28:54.342Z",
+        "projectId": 1,
+        "userId": 2,
+        "dependencies": {
+          "createdAt": "2018-05-08T21:28:54.386Z",
+          "updatedAt": "2018-05-08T21:28:54.386Z",
+          "ParentTaskId": 1,
+          "TaskId": 3
+        }
+      }
+    },
+    {
+      "id": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+      "type": "task",
+      "selected": false,
+      "x": 301,
+      "y": 25,
+      "extras": {},
+      "ports": [
+        {
+          "id": "39ec55a5-7b1e-4295-9df9-da54c8dd2e16",
+          "type": "task",
+          "selected": false,
+          "name": "top",
+          "parentNode": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+          "links": []
+        },
+        {
+          "id": "39dc5f62-8cdc-42c8-b5ca-4d2b03636d9f",
+          "type": "task",
+          "selected": false,
+          "name": "left",
+          "parentNode": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+          "links": []
+        },
+        {
+          "id": "ab73917f-6304-4ab7-90c4-2e64c0f5d53f",
+          "type": "task",
+          "selected": false,
+          "name": "bottom",
+          "parentNode": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+          "links": [
+            "985ca9b8-0ac1-448b-83be-421d78729223"
+          ]
+        },
+        {
+          "id": "998d907a-40a8-40f9-964b-5243171961e1",
+          "type": "task",
+          "selected": false,
+          "name": "right",
+          "parentNode": "54fa0332-c7bb-4983-bf99-06b228cc5f52",
+          "links": []
+        }
+      ],
+      "task": {
+        "id": 2,
+        "startDate": null,
+        "endDate": null,
+        "status": "pending",
+        "title": "First task",
+        "description": "Testing associations",
+        "createdAt": "2018-05-08T21:28:54.342Z",
+        "updatedAt": "2018-05-08T21:28:54.342Z",
+        "projectId": 1,
+        "userId": 1,
+        "project": {
+          "id": 1,
+          "title": "Project 1",
+          "createdAt": "2018-05-08T21:28:54.334Z",
+          "updatedAt": "2018-05-08T21:28:54.334Z"
+        },
+        "children": [
+          {
+            "id": 1,
+            "startDate": null,
+            "endDate": null,
+            "status": "pending",
+            "title": "Second task",
+            "description": "Testing associations",
+            "createdAt": "2018-05-08T21:28:54.342Z",
+            "updatedAt": "2018-05-08T21:28:54.342Z",
+            "projectId": 1,
+            "userId": 2,
+            "dependencies": {
+              "createdAt": "2018-05-08T21:28:54.376Z",
+              "updatedAt": "2018-05-08T21:28:54.376Z",
+              "ParentTaskId": 2,
+              "TaskId": 1
+            }
+          }
+        ],
+        "parents": [],
+        "documents": [],
+        "user": {
+          "id": 1,
+          "name": "Jason",
+          "email": "cody@email.com",
+          "createdAt": "2018-05-08T21:28:54.298Z",
+          "updatedAt": "2018-05-08T21:28:54.298Z"
+        },
+        "comments": []
+      }
+    }
+  ]
+}
