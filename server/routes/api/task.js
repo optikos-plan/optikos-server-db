@@ -24,7 +24,7 @@ router.get('/:taskId', async (req, res, next) => {
 
 router.get('/', async (req, res, next) => {
   try {
-    const tasks = await Task.findAll({ include: [{ all: true }] })
+    const tasks = await Task.findAll({ include: [{ all: true, nested: true }] })
     res.json(tasks)
   } catch (error) {
     console.group('Task Route')
