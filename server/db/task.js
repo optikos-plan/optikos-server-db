@@ -2,12 +2,13 @@ const Sequelize = require('sequelize')
 const db = require('./db')
 
 const task = db.define('task', {
+  // changed to display date w/o time
   startDate: {
-    type: Sequelize.DATE
+    type: Sequelize.DATEONLY
   },
-
+  // changed to display date w/o time
   endDate: {
-    type: Sequelize.DATE
+    type: Sequelize.DATEONLY
   },
 
   status: {

@@ -5,8 +5,8 @@ const seed = async () => {
   console.log('db synced!')
 
   const users = await Promise.all([
-    User.create({ email: 'cody@email.com', name: 'Jason' }),
-    User.create({ email: 'grace@hopper.com', name: 'Amal' })
+    User.create({ email: 'cody@email.com', name: 'Jason Yang' }),
+    User.create({ email: 'grace@hopper.com', name: 'Amal Sudama' })
   ])
   console.log(`seeded ${users.length} users`)
   console.log('email: ', users[0].email)
@@ -20,7 +20,8 @@ const seed = async () => {
       title: 'First task',
       description: 'Testing associations',
       userId: users[0].id,
-      projectId: project.id
+      projectId: project.id,
+      endDate: new Date(2018, 4, 10)
     }),
     Task.create({
       title: 'Second task',

@@ -5,6 +5,8 @@ const Project = require('./project')
 const Task = require('./task')
 const User = require('./user')
 
+// TODO: add relationship between user and projects
+
 Task.belongsTo(Project)
 Project.hasMany(Task)
 
