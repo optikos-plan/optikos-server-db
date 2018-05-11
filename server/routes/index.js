@@ -16,3 +16,4 @@ router.get('/', (req, res, next) => {
 
 router.use('/api/projects', require('./api/project'))
 router.use('/api/tasks', require('./api/task'))
+router.use('/api/users', require('./api/user'))
